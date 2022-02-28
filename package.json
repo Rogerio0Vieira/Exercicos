@@ -1,0 +1,13 @@
+{
+  "name": "exercicos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.19",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "object.pick": "^1.3.0"
+  }
+}
