@@ -1,3 +1,4 @@
+//Desafio das Rosas usando Callback
 const desafio1asRosasNaoFalam = () => {
   type callbackFn = () => void;
   const geraIntervaloAleatório = (): number => Math.floor(Math.random() * 3 * 1000);

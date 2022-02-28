@@ -25,10 +25,10 @@ type TAlunos = Record<string, unknown>;
 
 
 function orderBy(original: TAlunos[], keys: string[]){
+  original.sort((a,b)=> (a.nota > b.nota) ? -1 : 1)
   return original.map(function(origin) {
     const newOriginal: TAlunos = {};
     keys.map(function(key) {
-      origin.sort((a,b)=> (a.key < b.key) ? -1 : 1)
       return newOriginal[key] = origin[key];
     })
     return newOriginal;
