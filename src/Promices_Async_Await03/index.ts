@@ -36,36 +36,17 @@
 
   // Tentativa de cantar a música. Este bloco precisa ser modificado.
 
-  function sleep(ms){
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
+  queixoMeAsRosas()
+  .then(() => masQueBobagem())
+  .then(() => asRosasNaoFalam())
+  .then(() => simplesmenteAsRosasExalam())
+  .then(() => oPerfumeQueRoubamDeTi())
 
-      }, ms)
-    })
-  }
-
-  sleep(800)
-    .then((resposta) => {
-      return queixoMeAsRosas();
-      sleep(200)
-    })
-    .then((resposta) => {
-      return masQueBobagem();
-      sleep(300)
-    })
-    .then((resposta)=>{
-      return asRosasNaoFalam();
-      sleep(400)
-    })
-    .then((resposta) => {
-      return simplesmenteAsRosasExalam();
-      sleep(500)
-    })
-    .then((resposta) => {
-      return oPerfumeQueRoubamDeTi();
-      sleep(600)
-    })
-    
+  await queixoMeAsRosas();
+  await masQueBobagem();
+  await asRosasNaoFalam();
+  await simplesmenteAsRosasExalam();
+  await oPerfumeQueRoubamDeTi();
 }
 
 desafio1asRosasNaoFalam();
