@@ -1,5 +1,5 @@
 //Exercico comentado devido ao erro por usar o mesmo array de objetos
-/*const alunos = [
+const alunos = [
   { nome: 'João', nota: 7.3, bolsista: false },
   { nome: 'Maria', nota: 9.2, bolsista: true },
   { nome: 'Pedro', nota: 9.8, bolsista: false },
@@ -18,5 +18,5 @@ function pick(original: TAlunos[], keys: string[]){
   });
 }
 
-pick(alunos, ['nome','bolsista'])*/
+pick(alunos, ['nome','bolsista'])
 

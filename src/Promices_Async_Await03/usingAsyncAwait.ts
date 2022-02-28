@@ -1,7 +1,10 @@
 //Implememtando async e await
 
  function desafio1asRosasNaoFalam(){
+
   const geraIntervaloAleatório = (): number => Math.floor(Math.random() * 3 * 1000);
+  
+
   
   // métodos de versos. Estes métodos deverão ser modificados.
   function queixoMeAsRosas(){

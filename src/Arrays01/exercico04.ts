@@ -7,25 +7,14 @@ const alunos = [
 
 type TAlunos = Record<string, unknown>;
 
- // no final dar um return do array de objetos de acordo com o array de strings
 
-// function orderBy(original: TAlunos[], keys: string[]){
-//   return original.map(function(origin) {
-//     const newOriginal: TAlunos = {};
-//     keys.map(function(key) {
-//       newOriginal[key] = origin[key];
-//       origin.sort(function(a, b) {
-//         return a.localeCompare()
-//       })
-//       return
-//     })
-//     return newOriginal;
-//   });
-// }
-
+function ordenarAntes(arr: any[]){
+  return arr.sort((a: { nota: number; },b: { nota: number; })=>(a.nota > b.nota) ? -1 : 1)
+}
+ordenarAntes(alunos)
 
 function orderBy(original: TAlunos[], keys: string[]){
-  original.sort((a,b)=> (a.nota > b.nota) ? -1 : 1)
+  ordenarAntes(original)
   return original.map(function(origin) {
     const newOriginal: TAlunos = {};
     keys.map(function(key) {
@@ -35,3 +24,4 @@ function orderBy(original: TAlunos[], keys: string[]){
   });
 }
 
+console.log(orderBy(alunos,['nota','nome']))
